@@ -1,4 +1,4 @@
-## @just-every/code v0.4.2
+## @aspradhan/code v0.4.2
 
 This release sharpens Auto Drive reliability and keeps the TUI's log panes informative.
 
@@ -11,8 +11,8 @@ This release sharpens Auto Drive reliability and keeps the TUI's log panes infor
 ### Install
 
 ```
-npm install -g @just-every/code@latest
+npm install -g @aspradhan/code@latest
 code
 ```
 
-Compare: https://github.com/just-every/code/compare/v0.4.1...v0.4.2
+
