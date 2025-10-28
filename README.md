@@ -1,43 +1,98 @@
-# CODE
+# Codex Mail
 
 &ensp;
 
 <p align="center">
-  <img src="docs/logo.png" alt="Code Logo" width="400">
+  <img src="docs/logo.png" alt="Codex Mail Logo" width="400">
 </p>
 
 &ensp;
 
-**Code** is a fast, local coding agent available as both a **CLI/TUI** and **GUI application**. It's a fork of `openai/codex` focused on real developer ergonomics: Browser integration, multi-agents, theming, and reasoning control — all while staying compatible with upstream.
+**Codex Mail** is a unified platform that combines a powerful MCP (Model Context Protocol) server with multi-agent coordination capabilities. It provides a "mail-like" coordination layer for AI coding agents, allowing multiple agents (Codex CLI, Claude Code, Gemini CLI, etc.) to work together harmoniously on the same project.
 
-Now with **GUI mode** for users who prefer point-and-click interfaces!
-
-&ensp;
-## What's new in v0.4.0 (October 26, 2025)
-
-- **Auto Drive runs the whole play** – hand `/auto` a task and it now plans, coordinates agents, reruns checks, and recovers from hiccups without babysitting.
-- **Unified settings overlay** – `/settings` centralizes limits, model routing, themes, and CLI integrations so you can audit configuration in one place.
-- **Card-based activity stream** – Agents, browser sessions, web search, and Auto Drive render as compact cards with drill-down overlays for full logs.
-- **Turbocharged performance** – History rendering and streaming were optimized to stay smooth even during long multi-agent sessions.
-- **Smarter agent routing** – Mix and match orchestrator CLIs (Claude, Gemini, GPT-5, Qwen, and more) per `/plan`, `/code`, or `/solve` run.
-
-Read the full notes in `release-notes/RELEASE_NOTES.md`.
+Built on the foundation of OpenAI's Codex with enhanced multi-agent orchestration and a web-based coordination frontend.
 
 &ensp;
-## Why Code
+## What's New
 
-- 🚀 **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks.
-- 🖥️ **GUI Mode** – Optional graphical interface with point-and-click controls (NEW!)
-- 🌐 **Browser Integration** – CDP support, headless browsing, screenshots captured inline.
-- 🤖 **Multi-agent commands** – `/plan`, `/code` and `/solve` coordinate multiple CLI agents.
-- 🧭 **Unified settings hub** – `/settings` overlay for limits, theming, approvals, and provider wiring.
-- 🎨 **Theme system** – Switch between accessible presets, customize accents, and preview live via `/themes`.
-- 🔌 **MCP support** – Extend with filesystem, DBs, APIs, or your own tools.
-- 🔒 **Safety modes** – Read-only, approvals, and workspace sandboxing.
+### 🎉 Agent Coordination Layer (NEW!)
+
+Codex Mail now includes a complete **multi-agent coordination system**:
+
+- **📧 Mail-like messaging** – Agents communicate via inbox/outbox with GitHub-flavored Markdown
+- **🔒 File reservations** – Advisory "leases" prevent agents from conflicting on the same files
+- **🌐 Web UI** – Human oversight dashboard for browsing projects, agents, and messages
+- **🤖 Agent identities** – Memorable names (e.g., `GreenCastle`, `BlueLake`) for each agent instance
+- **🔍 Full-text search** – SQLite FTS5-powered search across all agent communications
+- **📊 Human Overseer** – Send high-priority messages to agents directly from the web UI
+
+### Code v0.4.0 Features
+
+- **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks
+- **Unified settings overlay** – `/settings` centralizes limits, model routing, themes, and CLI integrations
+- **Card-based activity stream** – Agents, browser sessions, web search, and Auto Drive render as compact cards
+- **Turbocharged performance** – History rendering and streaming optimized for long multi-agent sessions
+- **Smarter agent routing** – Mix and match orchestrator CLIs (Claude, Gemini, GPT-5, Qwen, and more)
+
+&ensp;
+## Why Codex Mail
+
+### Multi-Agent Coordination
+- 📧 **Mail system for agents** – Asynchronous messaging with threading and acknowledgments
+- 🔒 **File reservation system** – Prevent conflicts with advisory leases on files/globs
+- 👥 **Agent identities** – Memorable, persistent identities for each agent instance
+- 🔍 **Searchable history** – FTS5 full-text search across all agent communications
+- 🌐 **Web dashboard** – Human oversight with project/agent/message browsing
+- 🤝 **Cross-project coordination** – Link frontend/backend repos for harmonized development
+
+### Auto Drive & Orchestration
+- 🚀 **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks
+- 🖥️ **GUI Mode** – Optional graphical interface with point-and-click controls
+- 🌐 **Browser Integration** – CDP support, headless browsing, screenshots captured inline
+- 🤖 **Multi-agent commands** – `/plan`, `/code` and `/solve` coordinate multiple CLI agents
+- 🧭 **Unified settings hub** – `/settings` overlay for limits, theming, approvals, and provider wiring
+- 🎨 **Theme system** – Switch between accessible presets, customize accents, and preview live via `/themes`
+- 🔌 **MCP support** – Extend with filesystem, DBs, APIs, or your own tools
+- 🔒 **Safety modes** – Read-only, approvals, and workspace sandboxing
 
 ## Quickstart
 
-### GUI Mode (NEW!)
+### Agent Coordination Server (NEW!)
+
+Start the MCP coordination server for multi-agent workflows:
+
+```bash
+# Install uv (Python package installer)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+
+# Clone and setup
+git clone https://github.com/ApexHockey/codex_mail
+cd codex_mail
+
+# Create virtual environment and install dependencies
+uv python install 3.14
+uv venv -p 3.14
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv sync
+
+# Auto-detect and integrate with coding agents
+scripts/automatically_detect_all_installed_coding_agents_and_install_mcp_agent_mail_in_all.sh
+
+# Start the MCP server (port 8765)
+scripts/run_server_with_token.sh
+```
+
+**Access the Web UI:** Open `http://127.0.0.1:8765/mail` in your browser to:
+- Browse projects and agents
+- View message threads and conversations
+- Send messages to agents as "Human Overseer"
+- Search across all agent communications
+- Monitor file reservations and activity
+
+See [docs/AGENT_ONBOARDING.md](docs/AGENT_ONBOARDING.md) for detailed setup and [docs/CROSS_PROJECT_COORDINATION.md](docs/CROSS_PROJECT_COORDINATION.md) for multi-repo workflows.
+
+### GUI Mode
 
 For a graphical, click-ops experience on **Windows, macOS, or Linux**:
 
@@ -160,6 +215,77 @@ qwen --version
 /new
 ```
 
+&ensp;
+## Multi-Agent Coordination
+
+### Real-World Use Cases
+
+**1. Frontend + Backend Development**
+```
+Backend Agent (GreenCastle) ←→ Frontend Agent (BlueLake)
+         ↓                              ↓
+    Express.js API              React Components
+         ↓                              ↓
+    Shared thread: "User Authentication Flow"
+```
+
+Both agents coordinate on API contracts, share design decisions, and avoid stepping on each other's work through file reservations.
+
+**2. Feature Development with Multiple Agents**
+```python
+# Agent A reserves auth routes
+reserve_file_paths(
+    project_key="/path/to/backend",
+    agent_name="GreenCastle",
+    paths=["src/auth/**/*.py"],
+    exclusive=True,
+    ttl_seconds=3600
+)
+
+# Agent B works on different area
+reserve_file_paths(
+    project_key="/path/to/backend", 
+    agent_name="BlueLake",
+    paths=["src/api/users/**/*.py"],
+    exclusive=True,
+    ttl_seconds=3600
+)
+```
+
+**3. Cross-Repository Coordination**
+```bash
+# Frontend agent checks messages from backend team
+fetch_inbox(
+    project_key="/path/to/frontend",
+    agent_name="BlueLake",
+    urgent_only=True
+)
+
+# Send update about API changes
+send_message(
+    project_key="/path/to/backend",
+    sender_name="GreenCastle",
+    to=["BlueLake"],
+    subject="API: New authentication endpoints",
+    thread_id="FEAT-auth-123"
+)
+```
+
+### MCP Server Tools
+
+The coordination server provides these key tools:
+
+- **`register_agent`** - Create a persistent agent identity
+- **`send_message`** - Send GitHub-flavored Markdown messages
+- **`fetch_inbox`** - Check for new messages and updates
+- **`reserve_file_paths`** - Claim files/globs to prevent conflicts
+- **`release_file_reservations`** - Release file claims when done
+- **`search_messages`** - Full-text search across all communications
+- **`summarize_thread`** - Get AI summaries of conversation threads
+
+Full tool documentation: [README_CODEX_MAIL.md](README_CODEX_MAIL.md)
+
+&ensp;
 ## CLI reference
 
 ```shell
@@ -224,8 +350,47 @@ Code supports MCP for extended capabilities:
 - **Database connections**: Query and modify databases
 - **API integrations**: Connect to external services
 - **Custom tools**: Build your own extensions
+- **Agent coordination**: Use the Codex Mail MCP server for multi-agent workflows
 
-Configure MCP in `~/.code/config.toml` Define each server under a named table like `[mcp_servers.<name>]` (this maps to the JSON `mcpServers` object used by other clients):
+### Codex Mail MCP Server
+
+Configure your agents to use the coordination server:
+
+**For Codex CLI** (`~/.code/config.toml`):
+```toml
+[mcp_servers.codex_mail]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-http", "http://127.0.0.1:8765/mcp/"]
+```
+
+**For Claude Code** (`.claude/settings.json`):
+```json
+{
+  "mcpServers": {
+    "codex-mail": {
+      "type": "http",
+      "url": "http://127.0.0.1:8765/mcp/",
+      "headers": { "Authorization": "Bearer ${CODEX_MAIL_TOKEN}" }
+    }
+  }
+}
+```
+
+**For Gemini CLI** (`gemini.mcp.json`):
+```json
+{
+  "mcpServers": {
+    "codex-mail": {
+      "type": "http",
+      "url": "http://127.0.0.1:8765/mcp/"
+    }
+  }
+}
+```
+
+### Other MCP Servers
+
+Configure MCP in `~/.code/config.toml` Define each server under a named table like `[mcp_servers.<name>]`:
 
 ```toml
 [mcp_servers.filesystem]
@@ -266,16 +431,38 @@ model_reasoning_summary = "detailed"
 
 ### Environment variables
 
+**Code CLI:**
 - `CODE_HOME`: Override config directory location
 - `OPENAI_API_KEY`: Use API key instead of ChatGPT auth
 - `OPENAI_BASE_URL`: Use alternative API endpoints
 - `OPENAI_WIRE_API`: Force the built-in OpenAI provider to use `chat` or `responses` wiring
 
+**MCP Coordination Server:**
+- `STORAGE_ROOT`: Root directory for Git repos and SQLite DB (default: `~/.mcp_agent_mail_git_mailbox_repo`)
+- `HTTP_HOST`: Bind host (default: `127.0.0.1`)
+- `HTTP_PORT`: Bind port (default: `8765`)
+- `HTTP_BEARER_TOKEN`: Optional static bearer token for authentication
+- `LLM_ENABLED`: Enable AI features for summaries and discovery (default: `true`)
+- `LLM_DEFAULT_MODEL`: Default LLM model for summaries (default: `gpt-5-mini`)
+
+See `.env.example` for complete MCP server configuration options.
+
 &ensp;
 ## FAQ
 
-**How is this different from the original?**
-> This fork adds browser integration, multi-agent commands (`/plan`, `/solve`, `/code`), theme system, and enhanced reasoning controls while maintaining full compatibility.
+**What is Codex Mail?**
+> Codex Mail is an integrated platform combining OpenAI's Codex CLI with a powerful multi-agent coordination system. It provides mail-like messaging, file reservations, and a web UI for orchestrating multiple AI coding agents working on the same project.
+
+**How is this different from the original Codex?**
+> This adds browser integration, multi-agent commands (`/plan`, `/solve`, `/code`), theme system, enhanced reasoning controls, AND a complete MCP coordination server with web UI for managing multiple agents across projects.
+
+**When should I use the coordination server?**
+> Use it when you have:
+> - Multiple agents working on the same codebase
+> - Frontend and backend teams (separate repos) that need to coordinate
+> - Agents that might conflict on file changes
+> - Need for searchable agent communication history
+> - Want human oversight of agent activities
 
 **Can I use my existing Codex configuration?**
 > Yes. Code reads from both `~/.code/` (primary) and legacy `~/.codex/` directories. We only write to `~/.code/`, so Codex will keep running if you switch back; copy or remove legacy files if you notice conflicts.
@@ -283,8 +470,52 @@ model_reasoning_summary = "detailed"
 **Does this work with ChatGPT Plus?**
 > Absolutely. Use the same "Sign in with ChatGPT" flow as the original.
 
+**Does the coordination server work with other agents besides Codex?**
+> Yes! It works with Claude Code, Gemini CLI, Cursor, and any MCP-compatible coding agent. The integration scripts automatically detect and configure installed agents.
+
 **Is my data secure?**
-> Yes. Authentication stays on your machine, and we don't proxy your credentials or conversations.
+> Yes. Authentication stays on your machine, and we don't proxy your credentials or conversations. The MCP server stores all data locally in Git repositories and SQLite databases on your machine.
+
+
+&ensp;
+## Architecture
+
+### System Overview
+
+```
+┌─────────────────────────────────────────┐
+│   Coding Agents (Codex, Claude, etc.)   │
+│   - Each with unique identity           │
+│   - Independent working directories     │
+└────────────────┬────────────────────────┘
+                 │ HTTP (MCP Tools/Resources)
+┌────────────────▼────────────────────────┐
+│     Codex Mail MCP Server (FastMCP)     │
+│  ┌────────────────┐  ┌────────────────┐ │
+│  │  Web UI        │  │  MCP Endpoint  │ │
+│  │  /mail/*       │  │  /mcp/         │ │
+│  │  Human         │  │  Agent         │ │
+│  │  Oversight     │  │  Coordination  │ │
+│  └────────────────┘  └────────────────┘ │
+└────────┬────────────────────┬───────────┘
+         │                    │
+         ▼                    ▼
+┌────────────────┐  ┌────────────────────┐
+│   Git Storage  │  │   SQLite + FTS5    │
+│  (Markdown)    │  │  (Metadata/Search) │
+│  - Messages    │  │  - Agent registry  │
+│  - Profiles    │  │  - Full-text index │
+│  - File leases │  │  - Relationships   │
+└────────────────┘  └────────────────────┘
+```
+
+### Data Flow
+
+1. **Agent Registration**: Agents get memorable names (e.g., `GreenCastle`) and persistent profiles
+2. **Messaging**: Agents send/receive GitHub-flavored Markdown messages with threading
+3. **File Reservations**: Agents claim files/globs to signal editing intent
+4. **Search & Summarize**: Full-text search and AI summaries across all communications
+5. **Human Oversight**: Web UI for browsing, searching, and sending priority messages
 
 
 &ensp;
@@ -295,14 +526,15 @@ model_reasoning_summary = "detailed"
 &ensp;
 ## Contributing
 
-We welcome contributions! This fork maintains compatibility with upstream while adding community-requested features.
+We welcome contributions to both the Codex CLI and the coordination server!
 
 ### Development workflow
 
+**For Codex CLI:**
 ```bash
 # Clone and setup
-git clone https://github.com/aspradhan/codex.git
-cd code
+git clone https://github.com/ApexHockey/codex_mail.git
+cd codex_mail
 npm install
 
 # Build (use fast build for development)
@@ -312,12 +544,26 @@ npm install
 ./code-rs/target/dev-fast/code
 ```
 
+**For MCP Server:**
+```bash
+# Setup Python environment
+uv venv -p 3.14
+source .venv/bin/activate
+uv sync --dev
+
+# Run tests
+uv run pytest
+
+# Start development server
+uv run python -m mcp_agent_mail.cli serve-http
+```
+
 ### Opening a pull request
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Make your changes
-4. Run tests: `cargo test`
+4. Run tests (Rust: `cargo test`, Python: `pytest`)
 5. Build successfully: `./build-fast.sh`
 6. Submit a pull request
 
@@ -326,8 +572,9 @@ npm install
 ## Legal & Use
 
 ### License & attribution
-- This project is a community fork of `openai/codex` under **Apache-2.0**. We preserve upstream LICENSE and NOTICE files.
-- **Code** is **not** affiliated with, sponsored by, or endorsed by OpenAI.
+- The Codex CLI component is based on `openai/codex` under **Apache-2.0**. We preserve upstream LICENSE and NOTICE files.
+- The MCP coordination server is based on `mcp_agent_mail` by [Dicklesworthstone](https://github.com/Dicklesworthstone/mcp_agent_mail) under **MIT**.
+- **Codex Mail** is **not** affiliated with, sponsored by, or endorsed by OpenAI or Anthropic.
 
 ### Your responsibilities
 Using OpenAI, Anthropic or Google services through Code means you agree to **their Terms and policies**. In particular:
