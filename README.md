@@ -8,7 +8,7 @@
 
 &ensp;
 
-**Code** is a fast, local coding agent available as both a **CLI/TUI** and **GUI application**. It's a community-driven fork of `openai/codex` focused on real developer ergonomics: Browser integration, multi-agents, theming, and reasoning control — all while staying compatible with upstream.
+**Code** is a fast, local coding agent available as both a **CLI/TUI** and **GUI application**. It's a fork of `openai/codex` focused on real developer ergonomics: Browser integration, multi-agents, theming, and reasoning control — all while staying compatible with upstream.
 
 Now with **GUI mode** for users who prefer point-and-click interfaces!
 
