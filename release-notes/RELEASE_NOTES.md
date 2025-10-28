@@ -15,4 +15,4 @@ npm install -g @aspradhan/code@latest
 code
 ```
 
-Compare: https://github.com/aspradhan/codex/compare/v0.4.1...v0.4.2
+

@@ -70,7 +70,7 @@ npx -y @aspradhan/code
 #### Install & Run
 
 ```bash
-npm install -g @aspradhan/code
+npm install -g @aspradhan/codex
 code // or `coder` if you're using VS Code
 ```
 

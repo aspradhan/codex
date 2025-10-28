@@ -7,7 +7,7 @@ Run Codex head-less in pipelines. Example GitHub Action step:
 ```yaml
 - name: Update changelog via Code
   run: |
-    npm install -g @aspradhan/code
+    npm install -g @aspradhan/codex
     export OPENAI_API_KEY="${{ secrets.OPENAI_KEY }}"
     code exec --full-auto "update CHANGELOG for next release"
 ```
