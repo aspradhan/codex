@@ -131,10 +131,13 @@ See `.env.example` for full configuration options.
 
 ## 📚 Documentation
 
+**Complete Documentation Index**: [DOCUMENTATION.md](DOCUMENTATION.md)
+
+Key guides:
 - [Agent Onboarding Guide](docs/AGENT_ONBOARDING.md) - Get started with agents
 - [Cross-Project Coordination](docs/CROSS_PROJECT_COORDINATION.md) - Multi-repo workflows
+- [Integration Guide](INTEGRATION_GUIDE.md) - Complete setup walkthrough
 - [Project Design Guide](docs/project_idea_and_guide.md) - Architecture deep-dive
-- [API Reference](docs/README.md) - Full tool and resource documentation
 
 ## 🛠️ Development
 
