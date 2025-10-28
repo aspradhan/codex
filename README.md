@@ -6,11 +6,25 @@
   <img src="docs/logo.png" alt="Codex Mail Logo" width="400">
 </p>
 
+<p align="center">
+  <a href="https://buymeacoffee.com/aspradhan">
+    <img src="https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square" alt="Support Project">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0%20%7C%20Commercial-blue.svg?style=flat-square" alt="Dual License">
+  </a>
+  <a href="https://github.com/ApexHockey/codex_mail/issues">
+    <img src="https://img.shields.io/github/issues/ApexHockey/codex_mail.svg?style=flat-square" alt="Issues">
+  </a>
+</p>
+
 &ensp;
 
 **Codex Mail** is a unified platform that combines a powerful MCP (Model Context Protocol) server with multi-agent coordination capabilities. It provides a "mail-like" coordination layer for AI coding agents, allowing multiple agents (Codex CLI, Claude Code, Gemini CLI, etc.) to work together harmoniously on the same project.
 
 Built on the foundation of OpenAI's Codex with enhanced multi-agent orchestration and a web-based coordination frontend.
+
+> 💡 **Dual Licensing Available**: Use under Apache 2.0 (open source) or [Commercial License](LICENSE-COMMERCIAL.md) with priority support. [Support the project ☕](https://buymeacoffee.com/aspradhan)
 
 &ensp;
 ## What's New
@@ -532,8 +546,34 @@ See `.env.example` for complete MCP server configuration options.
 
 
 &ensp;
-## DONATE TO MY CODEX DEVELOPMENT EFFORTS
-# Buy Me A Coffee: https://buymeacoffee.com/aspradhan
+## 💰 Support This Project
+
+**☕ [Buy Me A Coffee](https://buymeacoffee.com/aspradhan)**
+
+Your support helps maintain and improve Codex Mail! Every contribution goes directly toward:
+- 🔧 Maintaining the codebase
+- ✨ Developing new features  
+- 🐛 Bug fixes and improvements
+- 📚 Documentation and tutorials
+- 🤝 Community support
+
+### Dual Licensing Options
+
+Codex Mail is available under two licenses:
+
+1. **[Apache 2.0](LICENSE)** (Open Source)
+   - ✅ Free to use, modify, and distribute
+   - ✅ Perfect for open-source projects
+   - ✅ Community-driven development
+
+2. **[Commercial License](LICENSE-COMMERCIAL.md)** (from AU$25/month)
+   - ✅ Priority support with SLAs
+   - ✅ Custom features and integrations
+   - ✅ Legal indemnification
+   - ✅ Private modifications allowed
+   - ✅ Perfect for commercial products
+
+**[Learn more about Commercial Licensing →](LICENSE-COMMERCIAL.md)**
 
 
 &ensp;
@@ -584,6 +624,26 @@ uv run python -m mcp_agent_mail.cli serve-http
 &ensp;
 ## Legal & Use
 
+### Dual Licensing Model
+
+**Codex Mail** is available under a dual-licensing model:
+
+1. **[Apache 2.0 License](LICENSE)** - Open source, free to use
+   - Use, modify, and distribute freely
+   - Must retain license and attribution notices
+   - No warranties or support guarantees
+   - Perfect for open-source projects
+
+2. **[Commercial License](LICENSE-COMMERCIAL.md)** - Commercial use with benefits
+   - Priority support with SLAs
+   - Custom features and integrations  
+   - Legal indemnification and warranties
+   - Private modifications allowed
+   - Starting at AU$25/month per user
+   - [Learn more →](LICENSE-COMMERCIAL.md)
+
+Choose the license that best fits your needs. You can start with Apache 2.0 and upgrade to commercial licensing anytime.
+
 ### License & attribution
 - The Codex CLI component is based on `openai/codex` under **Apache-2.0**. We preserve upstream LICENSE and NOTICE files.
 - The MCP coordination server is based on `mcp_agent_mail` by [Dicklesworthstone](https://github.com/Dicklesworthstone/mcp_agent_mail) under **MIT**.
@@ -606,9 +666,16 @@ AI providers can change eligibility, limits, models, or authentication flows. Co
 &ensp;
 ## License
 
-Apache 2.0 - See [LICENSE](LICENSE) file for details.
+**Dual Licensed** - Choose the option that works best for you:
 
-This project is a community fork of the original Codex CLI. We maintain compatibility while adding enhanced features requested by the developer community.
+- **[Apache 2.0](LICENSE)** - Open source license (free)
+- **[Commercial License](LICENSE-COMMERCIAL.md)** - Commercial use with priority support (from AU$25/month)
+
+See [LICENSE](LICENSE) file for Apache 2.0 terms, or [LICENSE-COMMERCIAL.md](LICENSE-COMMERCIAL.md) for commercial licensing options.
+
+This project is a community-enhanced version of the original Codex CLI. We maintain compatibility while adding features requested by the developer community.
+
+**Support the project:** ☕ [Buy Me a Coffee](https://buymeacoffee.com/aspradhan)
 
 &ensp;
 ---
