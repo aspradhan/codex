@@ -1,6 +1,32 @@
-OpenAI Codex
-Copyright 2025 OpenAI
+Codex Mail
+Copyright 2025 Codex Mail Contributors
 
-This project includes code derived from [Ratatui](https://github.com/ratatui/ratatui), licensed under the MIT license.
+This project is based on OpenAI Codex:
+Copyright 2025 OpenAI
+
+This project includes code derived from Ratatui (https://github.com/ratatui/ratatui), licensed under the MIT license.
 Copyright (c) 2016-2022 Florian Dehau
 Copyright (c) 2023-2025 The Ratatui Developers
+
+This project includes the MCP Agent Mail server component based on:
+https://github.com/Dicklesworthstone/mcp_agent_mail
+Licensed under the MIT License
+
+---
+
+DUAL LICENSING NOTICE
+
+Codex Mail is available under a dual-licensing model:
+
+1. Apache License 2.0 (Open Source)
+   - See LICENSE file for full terms
+   - Free to use, modify, and distribute
+   - No warranties or support guarantees
+
+2. Commercial License  
+   - See LICENSE-COMMERCIAL.md for full terms
+   - Priority support and additional benefits
+   - Starting at AU$25/month per user
+   - Contact: licensing@codexmail.io
+
+Support the project: https://buymeacoffee.com/aspradhan

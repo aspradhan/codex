@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Fast build script for local development - optimized for speed
+# Fast build script for Codex Mail
+# - Builds Rust components (Codex CLI)
+# - Python components (MCP Server) don't require building
 set -euo pipefail
 
 # Usage banner
