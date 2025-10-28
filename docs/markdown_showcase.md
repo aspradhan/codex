@@ -74,7 +74,7 @@ A quick tour of many common Markdown elements so you can verify rendering.
 - Title: [Rust](https://www.rust-lang.org "Rust language")
 - Reference: [Codex CLI][codex] and [CommonMark][cm]
 
-[codex]: https://github.com/openai/codex
+[codex]: https://github.com/aspradhan/codex
 [cm]: https://commonmark.org
 
 ---

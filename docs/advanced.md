@@ -5,11 +5,11 @@
 Run Codex head-less in pipelines. Example GitHub Action step:
 
 ```yaml
-- name: Update changelog via Codex
+- name: Update changelog via Code
   run: |
     npm install -g @aspradhan/codex
     export OPENAI_API_KEY="${{ secrets.OPENAI_KEY }}"
-    codex exec --full-auto "update CHANGELOG for next release"
+    code exec --full-auto "update CHANGELOG for next release"
 ```
 
 ### Resuming non-interactive sessions
@@ -19,31 +19,31 @@ You can resume a previous headless run to continue the same conversation context
 Interactive TUI equivalent:
 
 ```shell
-codex resume             # picker
-codex resume --last      # most recent
-codex resume <SESSION_ID>
+code resume             # picker
+code resume --last      # most recent
+code resume <SESSION_ID>
 ```
 
 Compatibility:
 
-- Latest source builds include `codex exec resume` (examples below).
-- Current released CLI may not include this yet. If `codex exec --help` shows no `resume`, use the workaround in the next subsection.
+- Latest source builds include `code exec resume` (examples below).
+- Current released CLI may not include this yet. If `code exec --help` shows no `resume`, use the workaround in the next subsection.
 
 ```shell
 # Resume the most recent recorded session and run with a new prompt (source builds)
-codex exec "ship a release draft changelog" resume --last
+code exec "ship a release draft changelog" resume --last
 
 # Alternatively, pass the prompt via stdin (source builds)
 # Note: omit the trailing '-' to avoid it being parsed as a SESSION_ID
-echo "ship a release draft changelog" | codex exec resume --last
+echo "ship a release draft changelog" | code exec resume --last
 
 # Or resume a specific session by id (UUID) (source builds)
-codex exec resume 7f9f9a2e-1b3c-4c7a-9b0e-123456789abc "continue the task"
+code exec resume 7f9f9a2e-1b3c-4c7a-9b0e-123456789abc "continue the task"
 ```
 
 Notes:
 
-- When using `--last`, Codex picks the newest recorded session; if none exist, it behaves like starting fresh.
+- When using `--last`, Code picks the newest recorded session; if none exist, it behaves like starting fresh.
 - Resuming appends new events to the existing session file and maintains the same conversation id.
 
 ## Tracing / verbose logging
@@ -74,7 +74,7 @@ subdirectories such as:
 Tags become nested path components, so custom helpers appear alongside the
 existing timestamped filenames.
 
-By comparison, the non-interactive mode (`codex exec`) defaults to `RUST_LOG=error`, but messages are printed inline, so there is no need to monitor a separate file.
+By comparison, the non-interactive mode (`code exec`) defaults to `RUST_LOG=error`, but messages are printed inline, so there is no need to monitor a separate file.
 
 See the Rust documentation on [`RUST_LOG`](https://docs.rs/env_logger/latest/env_logger/#enabling-logging) for more information on the configuration options.
 
@@ -90,6 +90,6 @@ args = ["-y", "mcp-server"]
 env = { "API_KEY" = "value" }
 ```
 
-## Using Codex as an MCP Server
+## Using Code as an MCP Server
 > [!TIP]
-> It is somewhat experimental, but the Codex CLI can also be run as an MCP _server_ via `codex mcp`. If you launch it with an MCP client such as `npx @modelcontextprotocol/inspector codex mcp` and send it a `tools/list` request, you will see that there is only one tool, `codex`, that accepts a grab-bag of inputs, including a catch-all `config` map for anything you might want to override. Feel free to play around with it and provide feedback via GitHub issues. 
+> It is somewhat experimental, but the Code CLI can also be run as an MCP _server_ via `code mcp`. If you launch it with an MCP client such as `npx @modelcontextprotocol/inspector code mcp` and send it a `tools/list` request, you will see that there is only one tool, `code`, that accepts a grab-bag of inputs, including a catch-all `config` map for anything you might want to override. Feel free to play around with it and provide feedback via GitHub issues. 
