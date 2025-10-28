@@ -1,11 +1,11 @@
-# just-every/homebrew-tap
+# aspradhan/homebrew-tap
 
 Unofficial tap for Code (terminal coding agent).
 
 ## Usage
 
 ```bash
-brew tap just-every/tap
+brew tap aspradhan/tap
 brew install code
 ```
 

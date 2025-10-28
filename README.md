@@ -64,13 +64,13 @@ See [QUICKSTART_GUI.md](QUICKSTART_GUI.md) or [docs/CROSS_PLATFORM_GUI.md](docs/
 #### Run
 
 ```bash
-npx -y @just-every/code
+npx -y @aspradhan/code
 ```
 
 #### Install & Run
 
 ```bash
-npm install -g @just-every/code
+npm install -g @aspradhan/code
 code // or `coder` if you're using VS Code
 ```
 
@@ -295,7 +295,7 @@ We welcome contributions! This fork maintains compatibility with upstream while 
 
 ```bash
 # Clone and setup
-git clone https://github.com/just-every/code.git
+git clone https://github.com/aspradhan/codex.git
 cd code
 npm install
 
@@ -346,4 +346,4 @@ This project is a community fork of the original Codex CLI. We maintain compatib
 
 &ensp;
 ---
-**Need help?** Open an issue on [GitHub](https://github.com/just-every/code/issues) or check our documentation.
+**Need help?** Open an issue on [GitHub](https://github.com/aspradhan/codex/issues) or check our documentation.
