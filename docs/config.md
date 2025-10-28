@@ -397,7 +397,7 @@ command = "npx"
 args = ["-y", "mcp-server"]
 # Optional: propagate additional env vars to the MVP server.
 # A default whitelist of env vars will be propagated to the MCP server.
-# https://github.com/aspradhan/codex/blob/main/codex-rs/rmcp-client/src/utils.rs#L82
+# https://github.com/aspradhan/codex/blob/main/code-rs/rmcp-client/src/utils.rs#L82
 env = { "API_KEY" = "value" }
 ```
 
