@@ -286,6 +286,12 @@ model_reasoning_summary = "detailed"
 **Is my data secure?**
 > Yes. Authentication stays on your machine, and we don't proxy your credentials or conversations.
 
+
+&ensp;
+## DONATE TO MY CODEX DEVELOPMENT EFFORTS
+# Buy Me A Coffee: https://buymeacoffee.com/aspradhan
+
+
 &ensp;
 ## Contributing
 
