@@ -646,7 +646,6 @@ Choose the license that best fits your needs. You can start with Apache 2.0 and 
 
 ### License & attribution
 - The Codex CLI component is based on `openai/codex` under **Apache-2.0**. We preserve upstream LICENSE and NOTICE files.
-- The MCP coordination server is based on `mcp_agent_mail` by [Dicklesworthstone](https://github.com/Dicklesworthstone/mcp_agent_mail) under **MIT**.
 - **Codex Mail** is **not** affiliated with, sponsored by, or endorsed by OpenAI or Anthropic.
 
 ### Your responsibilities
