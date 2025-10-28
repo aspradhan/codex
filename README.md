@@ -40,7 +40,7 @@ Codex Mail now includes a complete **multi-agent coordination system**:
 - **🔍 Full-text search** – SQLite FTS5-powered search across all agent communications
 - **📊 Human Overseer** – Send high-priority messages to agents directly from the web UI
 
-### Code v0.4.0 Features
+### Codex v0.4.0 Features
 
 - **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks
 - **Unified settings overlay** – `/settings` centralizes limits, model routing, themes, and CLI integrations
