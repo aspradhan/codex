@@ -286,6 +286,19 @@ The coordination server provides these key tools:
 Full tool documentation: [README_CODEX_MAIL.md](README_CODEX_MAIL.md)
 
 &ensp;
+## 📚 Documentation
+
+**Complete Documentation Index**: [DOCUMENTATION.md](DOCUMENTATION.md)
+
+Quick links:
+- **[Getting Started](docs/getting-started.md)** - Detailed setup guide
+- **[Integration Guide](INTEGRATION_GUIDE.md)** - Complete integration walkthrough
+- **[Agent Onboarding](docs/AGENT_ONBOARDING.md)** - Agent setup cookbook
+- **[Configuration Reference](docs/config.md)** - All configuration options
+- **[Slash Commands](docs/slash-commands.md)** - Command reference
+- **[FAQ](docs/faq.md)** - Frequently asked questions
+
+&ensp;
 ## CLI reference
 
 ```shell
@@ -599,4 +612,4 @@ This project is a community fork of the original Codex CLI. We maintain compatib
 
 &ensp;
 ---
-**Need help?** Open an issue on [GitHub](https://github.com/aspradhan/codex/issues) or check our documentation.
+**Need help?** Open an issue on [GitHub](https://github.com/ApexHockey/codex_mail/issues) or check our [complete documentation](DOCUMENTATION.md).
