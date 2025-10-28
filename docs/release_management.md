@@ -1,6 +1,6 @@
 # Release Management
 
-Currently, we made Code binaries available in three places:
+Currently, we make Code binaries available in three places:
 
 - GitHub Releases https://github.com/aspradhan/codex/releases/
 - `@aspradhan/code` on npm: https://www.npmjs.com/package/@aspradhan/code
