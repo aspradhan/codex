@@ -29,16 +29,16 @@ Built on the foundation of OpenAI's Codex with enhanced multi-agent orchestratio
 &ensp;
 ## What's New
 
-### 🎉 Agent Coordination Layer (NEW!)
+###  Agent Coordination Layer (NEW!)
 
 Codex Mail now includes a complete **multi-agent coordination system**:
 
-- **📧 Mail-like messaging** – Agents communicate via inbox/outbox with GitHub-flavored Markdown
-- **🔒 File reservations** – Advisory "leases" prevent agents from conflicting on the same files
-- **🌐 Web UI** – Human oversight dashboard for browsing projects, agents, and messages
-- **🤖 Agent identities** – Memorable names (e.g., `GreenCastle`, `BlueLake`) for each agent instance
-- **🔍 Full-text search** – SQLite FTS5-powered search across all agent communications
-- **📊 Human Overseer** – Send high-priority messages to agents directly from the web UI
+- ** Mail-like messaging** – Agents communicate via inbox/outbox with GitHub-flavored Markdown
+- ** File reservations** – Advisory "leases" prevent agents from conflicting on the same files
+- ** Web UI** – Human oversight dashboard for browsing projects, agents, and messages
+- ** Agent identities** – Memorable names (e.g., `GreenCastle`, `BlueLake`) for each agent instance
+- ** Full-text search** – SQLite FTS5-powered search across all agent communications
+- ** Human Overseer** – Send high-priority messages to agents directly from the web UI
 
 ### Codex v0.4.0 Features
 
@@ -52,22 +52,22 @@ Codex Mail now includes a complete **multi-agent coordination system**:
 ## Why Codex Mail
 
 ### Multi-Agent Coordination
-- 📧 **Mail system for agents** – Asynchronous messaging with threading and acknowledgments
-- 🔒 **File reservation system** – Prevent conflicts with advisory leases on files/globs
-- 👥 **Agent identities** – Memorable, persistent identities for each agent instance
-- 🔍 **Searchable history** – FTS5 full-text search across all agent communications
-- 🌐 **Web dashboard** – Human oversight with project/agent/message browsing
-- 🤝 **Cross-project coordination** – Link frontend/backend repos for harmonized development
+-  **Mail system for agents** – Asynchronous messaging with threading and acknowledgments
+-  **File reservation system** – Prevent conflicts with advisory leases on files/globs
+-  **Agent identities** – Memorable, persistent identities for each agent instance
+-  **Searchable history** – FTS5 full-text search across all agent communications
+-  **Web dashboard** – Human oversight with project/agent/message browsing
+-  **Cross-project coordination** – Link frontend/backend repos for harmonized development
 
 ### Auto Drive & Orchestration
-- 🚀 **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks
-- 🖥️ **GUI Mode** – Optional graphical interface with point-and-click controls
-- 🌐 **Browser Integration** – CDP support, headless browsing, screenshots captured inline
-- 🤖 **Multi-agent commands** – `/plan`, `/code` and `/solve` coordinate multiple CLI agents
-- 🧭 **Unified settings hub** – `/settings` overlay for limits, theming, approvals, and provider wiring
-- 🎨 **Theme system** – Switch between accessible presets, customize accents, and preview live via `/themes`
-- 🔌 **MCP support** – Extend with filesystem, DBs, APIs, or your own tools
-- 🔒 **Safety modes** – Read-only, approvals, and workspace sandboxing
+-  **Auto Drive orchestration** – Multi-agent automation that now self-heals and ships complete tasks
+-  **GUI Mode** – Optional graphical interface with point-and-click controls
+-  **Browser Integration** – CDP support, headless browsing, screenshots captured inline
+-  **Multi-agent commands** – `/plan`, `/code` and `/solve` coordinate multiple CLI agents
+-  **Unified settings hub** – `/settings` overlay for limits, theming, approvals, and provider wiring
+-  **Theme system** – Switch between accessible presets, customize accents, and preview live via `/themes`
+-  **MCP support** – Extend with filesystem, DBs, APIs, or your own tools
+-  **Safety modes** – Read-only, approvals, and workspace sandboxing
 
 ## Quickstart
 
@@ -551,11 +551,11 @@ See `.env.example` for complete MCP server configuration options.
 **☕ [Buy Me A Coffee](https://buymeacoffee.com/aspradhan)**
 
 Your support helps maintain and improve Codex Mail! Every contribution goes directly toward:
-- 🔧 Maintaining the codebase
-- ✨ Developing new features  
-- 🐛 Bug fixes and improvements
-- 📚 Documentation and tutorials
-- 🤝 Community support
+-  Maintaining the codebase
+-  Developing new features  
+-  Bug fixes and improvements
+-  Documentation and tutorials
+-  Community support
 
 ### Dual Licensing Options
 
@@ -579,7 +579,7 @@ Codex Mail is available under two licenses:
 &ensp;
 ## Contributing
 
-We welcome contributions to both the Codex CLI and the coordination server!
+I welcome contributions to both the Codex CLI and the coordination server!
 
 ### Development workflow
 
